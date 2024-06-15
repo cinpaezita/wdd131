@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ head {
 body {
     display: block;
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -43,14 +44,16 @@ h3 {
 }
 
 h4 {
-    font-size: small;
+    font-size: smaller;
     font-style: italic;
+    font-weight: 100;
     padding: .5em 0 2em 2em;
 }
 
 p {
     font-size: medium;
     padding: .5em;
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -67,8 +70,8 @@ header nav {
     justify-content: space-evenly;
     padding: 1em;
     background-color: rgb(2, 2, 44);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
+    font-family: 'Lato', sans-serif;
+    font-size: large;
     font-weight: 500;
 }
 
@@ -85,11 +88,6 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: center;
-}
-
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
 }
 
 section {

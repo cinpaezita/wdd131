@@ -1,9 +1,7 @@
 // getdates.js
-
-// Esperar a que el DOM esté completamente cargado
-document.addEventListener('DOMContentLoaded', function () {
-    const currentYear = document.getElementById('currentyear');
-    const lastModified = document.getElementById('lastModified');
+document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = document.getElementById("currentyear");
+    const lastModified = document.getElementById("lastModified");
 
     const today = new Date();
 
