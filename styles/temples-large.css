@@ -1,0 +1,64 @@
+@media screen and (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        justify-content: center;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2rem;
+        margin: 0 9rem 0 9rem;
+    }
+
+    figure {
+        display: grid;
+        margin: 1rem;
+    }
+
+    figcaption {
+        text-align: center;
+        padding: 1rem 0 3rem 0;
+        color: #1a053b;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        border-radius: .5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 3rem 2rem 2rem 2rem;
+        font-size: 2rem;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+
+}
