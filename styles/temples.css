@@ -108,6 +108,7 @@ figure {
 figcaption {
     text-align: center;
     padding: 1rem 0 2rem 0;
+    font-family: 'Lato', sans-serif;
 }
 
 figure img {
@@ -128,4 +129,5 @@ footer p {
     padding: 1.5rem;
     font-size: 1rem;
     line-height: 0;
+    font-family: 'Lato', sans-serif;
 }
