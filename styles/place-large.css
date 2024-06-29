@@ -1,0 +1,47 @@
+@media screen and (min-width: 740px) {
+    .country-weather h2::after {
+        content: '⛅';
+        padding-left: 1rem;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero h2 {
+        background-color: var(--secondary-color);
+        color: var(--accent1-color);
+        width: 80%;
+        margin: 0.5rem 0 1.5rem -3rem;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+        align-self: center;
+        font-weight: normal;
+    }
+
+    .country-data,
+    .country-weather {
+        position: absolute;
+        background-color: var(--accent1a-color);
+        padding-bottom: 1rem;
+    }
+
+    .country-data {
+        top: 1rem;
+        left: 1rem;
+        min-width: 25%;
+    }
+
+    .country-weather {
+        bottom: 1rem;
+        right: 1rem;
+        min-width: 20%;
+    }
+
+    .country-weather img {
+        display: none;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
