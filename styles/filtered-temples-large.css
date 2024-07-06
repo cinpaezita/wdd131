@@ -1,0 +1,41 @@
+@media screen and (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    h2 {
+        text-align: center;
+        padding: 3rem 2rem 2rem 2rem;
+        font-size: 2rem;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 3rem 0 3rem;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+
+}
