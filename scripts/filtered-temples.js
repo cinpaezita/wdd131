@@ -91,18 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     ];
 
-    preloadLCPImage(temples);
-
     createTempleCard(temples);
-
-    function preloadLCPImage(temples) {
-        const lcpImage = temples.find(temple => temple.templeName === "Aba Nigeria");
-        if (lcpImage) {
-            const img = new Image();
-            img.src = lcpImage.imageUrl;
-        }
-    }
-
     // *** Navigation Links and Page Title Section ***
     const homeLink = document.querySelector('#home');
     const oldTemplesLink = document.querySelector('#old');
