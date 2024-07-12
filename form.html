@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Cinthia Paez</title>
+    <meta name="description" content="WDD 131 - Product Review Form - Cinthia Paez">
+    <meta name="author" content="Cinthia Paez">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="form">
+            <label>
+                Product Name <span class="required">*</span>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                </select>
+            </label>
+            <div>Overall Rating <span class="required">*</span></div>
+            <section class="rating">
+                <label>
+                    <span>&star;</span>
+                    <input type="radio" id="onestar" name="overall-rating" value="1" required>
+                </label>
+                <label>
+                    <span>&star;&star;</span>
+                    <input type="radio" id="twostar" name="overall-rating" value="2" required>
+                </label>
+                <label>
+                    <span>&star;&star;&star;</span>
+                    <input type="radio" id="threestar" name="overall-rating" value="3" required>
+                </label>
+                <label>
+                    <span>&star;&star;&star;&star;</span>
+                    <input type="radio" id="fourstar" name="overall-rating" value="4" required>
+                </label>
+                <label>
+                    <span>&star;&star;&star;&star;&star;</span>
+                    <input type="radio" id="fivestar" name="overall-rating" value="5" required>
+                </label>
+            </section>
+            <label>
+                Date of Installation <span class="required">*</span>
+                <input type="date" id="install-date" name="install-date" required>
+            </label>
+            <div class="features">
+                Which features did you find useful in the product?<br><span class="option">(Check all that
+                    apply)</span>
+            </div>
+            <section class="features">
+                <label>
+                    <input type="checkbox" name="durability" value="durability">
+                    Durability
+                </label>
+                <label>
+                    <input type="checkbox" name="ease-of-use" value="ease-of-use">
+                    Ease of Use
+                </label>
+                <label>
+                    <input type="checkbox" name="performance" value="performance">
+                    Performance
+                </label>
+                <label>
+                    <input type="checkbox" name="design" value="design">
+                    Design
+                </label>
+            </section>
+            <label>
+                Written Review <span class="option">(Optional)</span>
+                <textarea id="written-review" name="written-review" rows="4"></textarea>
+            </label>
+            <label>
+                Your Name <span class="option">(Optional)</span>
+                <input type="text" id="name" name="name" autocomplete="off">
+            </label>
+            <input type="submit" value="Post Review">
+        </form>
+        <div class="review-count">
+            <p class="visits"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> &#128516; Cinthia Paez &#128516; Paraguay</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
