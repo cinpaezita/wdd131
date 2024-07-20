@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Adventures Playhouses | Catalog</title>
+    <meta name="description"
+        content="The Catalog Page offers comprehensive listings of available toy houses made from eco-friendly materials. It includes detailed product images, descriptions, and specifications.">
+    <meta name="author" content="Cinthia Paez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan-responsive.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <script src="scripts/endless.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-white-endlees-adventures.webp" alt="Endless Adventures Playhouses Site Logo"
+            loading="lazy" width="180" height="103">
+        <button id="menu" type="button" aria-label="Toggle navigation menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="catalog.html" class="active">Catalog</a>
+            <a href="about.html">About Us</a>
+    </header>
+    <main>
+        <section id="productFilterContainer">
+            <select id="productFilter" name="productFilter">
+                <option value="all">All Products</option>
+                <option value="house1">Sunny Retreat</option>
+                <option value="house2">Adventure Haven</option>
+                <option value="house3">Creative Cottage</option>
+                <option value="house4">Eco Explorer</option>
+                <option value="house5">Dream House</option>
+                <option value="house6">Imagination Oasis</option>
+            </select>
+        </section>
+
+        <section id="productContainer" class="product-container">
+        </section>
+
+        <section id="productDetails" class="product-details">
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;<span id="currentyear"></span> &#127968; Endless Adventures Playhouses &#127968;</p>
+            <p id="lastModified"></p>
+        </div>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/" target="_blank"> <img src="images/facebook.svg" alt="Facebook"
+                    loading="lazy" width="30" height=30>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank"> <img src="images/x.svg" alt="Twitter" loading="lazy"
+                    width="30" height=30>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank"> <img src="images/instagram.svg" alt="Instagram"
+                    loading="lazy" width="30" height=30>
+            </a>
+            <a href="resources.html" target="_blank">RESOURCES</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

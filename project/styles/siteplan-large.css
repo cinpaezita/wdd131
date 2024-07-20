@@ -1,0 +1,157 @@
+@media screen and (min-width: 740px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        justify-content: center;
+    }
+
+    body {
+        display: block;
+    }
+
+    .template {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 2rem;
+        margin: 0 9rem 0 9rem;
+    }
+
+    figure {
+        display: grid;
+        margin: 1rem;
+    }
+
+    figcaption {
+        text-align: center;
+        padding: 1rem 0 3rem 0;
+        color: #1a053b;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+        border-radius: .5rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+    .navigation {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.5rem;
+    }
+
+    .hero h1 {
+        top: 150px;
+    }
+
+    .hero-button {
+        bottom: 40%;
+    }
+
+    #productContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        /* Space between product-card */
+        justify-content: center;
+        /* Centralize the cards in the container. */
+    }
+
+    /* Product Card */
+    .product-card {
+        box-sizing: border-box;
+        width: 300px;
+        /* Fixed width for product cards */
+        padding: 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #fff;
+        overflow: hidden;
+        /* Ensures content does not overflow */
+    }
+
+    /* Product image */
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        /* Maintains the aspect ratio of the image */
+        border-radius: 4px;
+    }
+
+    /* Product details */
+    .product-details {
+        display: none;
+        padding: 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .product-details.active {
+        display: block;
+    }
+
+    /* Team */
+    .flag {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .flag div {
+        display: flex;
+        flex-direction: column;
+        padding: .2em;
+        align-items: center;
+    }
+
+    .flag img {
+        max-width: 15em;
+        height: auto;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 2rem auto;
+    }
+
+}

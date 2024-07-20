@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endless Adventures Playhouses | About Us</title>
+    <meta name="description"
+        content="The About Us Page narrates the business's inception, introduces the team, and provide a contact information form">
+    <meta name="author" content="Cinthia Paez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/siteplan-responsive.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+
+    <script src="scripts/endless.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-white-endlees-adventures.webp" alt="Endless Adventures Playhouses Site Logo"
+            loading="lazy" width="180" height="103">
+        <button id="menu" type="button" aria-label="Toggle navigation menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="about.html" class="active">About Us</a>
+    </header>
+    <main>
+        <section class="about-intro">
+            <h1>About Us</h1>
+            <p>At Endless Adventures Playhouses, we are dedicated to providing practical and creative toy solutions for
+                families. Our mission is to inspire imaginative play and provide high-quality, safe, and sustainable
+                products.</p>
+        </section>
+        <h2>Meet the Team</h2>
+        <section class="home">
+            <div class="flag">
+                <img src="images/founder1.webp" alt="Founder 1" loading="lazy" width="500" height=500>
+                <div>
+                    <h3>Andrea Smith</h3>
+                    <h4>Founder & CEO</h4>
+                    <p>Andrea is passionate about creating innovative and<br>sustainable toys that inspire children's
+                        creativity.</p>
+                </div>
+            </div>
+        </section>
+        <section class="home">
+            <div class="flag">
+                <img src="images/founder2.webp" alt="Founder 2" loading="lazy" width="500" height=500>
+                <div>
+                    <h3>Marcos Smith</h3>
+                    <h4>Co-Founder & COO</h4>
+                    <p>Marcos oversees operations and ensures that our<br>products meet the highest quality and safety
+                        standards.</p>
+                </div>
+            </div>
+        </section>
+        <section class="commitment">
+            <h2>Our Commitment</h2>
+            <p>We are committed to quality, safety standards, and sustainability. Our products are designed with care
+                and precision to ensure that they are not only fun but also safe for children to use.</p>
+        </section>
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="confirmation.html" method="get" class="form">
+            <label for="name">Name: <span class="required">*</span>
+                <input type="text" id="name" name="name" autocomplete="off" required></label>
+
+            <label for="email">Email:<span class="required">*</span>
+                <input type="email" id="email" name="email" autocomplete="off" required></label>
+
+            <label for="message">Message:<span class="required">*</span>
+                <textarea id="message" name="message" required></textarea></label>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+    </main>
+    <footer>
+        <div>
+            <p>&copy;<span id="currentyear"></span> &#127968; Endless Adventures Playhouses &#127968;</p>
+            <p id="lastModified"></p>
+        </div>
+        <nav class="sociallinks">
+            <a href="https://www.facebook.com/" target="_blank"> <img src="images/facebook.svg" alt="Facebook"
+                    loading="lazy" width="30" height=30>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank"> <img src="images/x.svg" alt="Twitter" loading="lazy"
+                    width="30" height=30>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank"> <img src="images/instagram.svg" alt="Instagram"
+                    loading="lazy" width="30" height=30>
+            </a>
+            <a href="resources.html" target="_blank">RESOURCES</a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
