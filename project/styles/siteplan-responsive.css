@@ -386,6 +386,14 @@ footer p {
     font-weight: 900;
 }
 
+.contact {
+    background-color: var(--background-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
 .contact-count {
     display: flex;
     justify-content: center;
@@ -393,14 +401,6 @@ footer p {
     height: 5rem;
     text-align: center;
     margin: 1rem 0;
-}
-
-.contact {
-    background-color: var(--background-color);
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin: 1rem auto;
-    padding: 1rem;
 }
 
 .visits {

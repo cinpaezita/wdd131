@@ -158,10 +158,19 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("numContacts-ls", numContacts);
 
     // Display the number of contacts
-    if (numContacts > 1) {
+    if (numContacts !== 0) {
         visitsDisplay.textContent = `You have made ${numContacts} contacts.`;
     } else {
         visitsDisplay.textContent = `This is your first contact. 🥳 Welcome!`;
+    }
+
+    // Check if the message was submitted
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('name') && urlParams.has('email') && urlParams.has('message')) {
+        //  increment the number of contacts by one.
+        numReviews++;
+        //  store the new contact total into localStorage, key=numReviews-ls
+        localStorage.setItem("numReviews-ls", numReviews);
     }
 
 });
