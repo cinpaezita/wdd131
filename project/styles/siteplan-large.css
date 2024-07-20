@@ -78,11 +78,7 @@
     }
 
     .hero h1 {
-        top: 150px;
-    }
-
-    .hero-button {
-        bottom: 40%;
+        top: 35%;
     }
 
     #productContainer {
@@ -149,9 +145,5 @@
         height: auto;
     }
 
-    form {
-        max-width: 500px;
-        margin: 2rem auto;
-    }
 
 }
